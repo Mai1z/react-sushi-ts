@@ -1,5 +1,6 @@
-import sushiLogo from './assets/img/sushiLogo.png';
+import sushiLogo from '../assets/img/sushiLogo.png';
 import React from 'react';
+import {Button} from './Button'
 
 const Header:React.FC = () => {
     return (
@@ -13,7 +14,7 @@ const Header:React.FC = () => {
                     </div>
                 </div>
                 <div className="header__cart">
-                    <a href="/cart.html" className="button button--cart">
+                    <Button outline={false} className={'button--cart'}>
                         <span>520 ₽</span>
                         <div className="button__delimiter"/>
                         <svg
@@ -46,7 +47,7 @@ const Header:React.FC = () => {
                             />
                         </svg>
                         <span>3</span>
-                    </a>
+                    </Button>
                 </div>
             </div>
         </div>
