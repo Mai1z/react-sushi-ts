@@ -1,17 +1,35 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from 'react'
 
-export const SortPopup:React.FC = () => {
+export const SortPopup:React.FC<{items:string[]}> = ({items}) => {
     const [visiblePopup, setVisiblePopup] = useState<boolean>(false)
-    console.log(visiblePopup)
+    const [activeItem, setActiveItem] = useState<number>(0)
+    const sortRef = useRef<HTMLDivElement | null>(null)
 
     const toggleVisiblePopup = () => {
         setVisiblePopup(!visiblePopup)
     }
 
+    const onSelectItem = (index: number) => {
+        setActiveItem(index)
+        setVisiblePopup(false)
+    }
+
+    const handleOutsideClick = (e:any) => {
+        if (!e.path.includes(sortRef.current)) {
+            setVisiblePopup(false)
+            console.log('outside')
+        }
+    }
+
+    useEffect(() => {
+        document.body.addEventListener('click', handleOutsideClick)
+    }, [])
+
     return (
-        <div className="sort">
+        <div ref={sortRef} className="sort">
             <div className="sort__label">
                 <svg
+                    className={visiblePopup ? 'rotated' : ''}
                     width="10"
                     height="6"
                     viewBox="0 0 10 6"
@@ -24,14 +42,21 @@ export const SortPopup:React.FC = () => {
                     />
                 </svg>
                 <b>Сортировка по:</b>
-                <span onClick={toggleVisiblePopup}>популярности</span>
+                <span onClick={toggleVisiblePopup}>{items[activeItem]}</span>
             </div>
             {
                 visiblePopup && <div className="sort__popup">
                     <ul>
-                        <li className="active">популярности</li>
-                        <li>цене</li>
-                        <li>алфавиту</li>
+                        {items &&
+                        items.map((name, index) => (
+                            <li
+                                onClick={() => onSelectItem(index)}
+                                className={activeItem === index ? 'active' : ''}
+                                key={`${name}_${index}`}
+                            >
+                                {name}
+                            </li>
+                        ))}
                     </ul>
                 </div>
             }

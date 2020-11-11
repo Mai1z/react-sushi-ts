@@ -1,0 +1,84 @@
+{
+  "sushi": [
+    {
+      "id": 0,
+      "imageUrl": "https://kawaii-sushi.ru/images/20180605-_mg_3117.png?crc=4276501498",
+      "name": "Сет империя",
+      "price": 590,
+      "category": 0,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://kawaii-sushi.ru/images/%d0%ba%d0%b0%d0%bf%d1%80%d0%b8%d0%b7-(%d0%ba%d0%b0%d0%bb%d0%b8%d1%84%d0%be%d1%80%d0%bd%d0%b8%d1%8f-%d1%81-%d0%ba%d1%80%d0%b0%d0%b1%d0%be%d0%bc%2c-%d1%84%d0%b8%d0%bb%d0%b0%d0%b4%d0%b5%d0%bb%d1%8c%d1%84%d0%b8%d1%8f-%d0%bb%d0%b0%d0%b9%d1%82%2c-%d1%82%d0%b5%d0%bc%d0%bf%d1%83%d1%80%d0%b0-%d0%bd%d0%b5%d0%b6%d0%bd%d0%b0%d1%8f%2c-%d1%85%d0%be%d1%82-%d0%ba%d1%80%d0%b0%d0%b1%2c-%d0%b1%d1%80%d0%b0%d0%b2%d0%b0%d1%8f-%d1%82%d0%b5%d0%bc%d0%bf%d1%83%d1%80%d0%b0-%d1%81%d1%82%d0%be%d0%b8%d0%bc%d0%be%d1%81%d1%82%d1%8c---590-%d1%80%d1%83%d0%b1-%d0%b2%d0%b5%d1%81-1500-%d0%b3%d1%80.png?crc=3836139004",
+      "name": "Сет Каприз",
+      "price": 690,
+      "category": 0,
+      "rating": 6
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://kawaii-sushi.ru/images/_mg_0956.png?crc=3778083333",
+      "name": "Сет Именинник",
+      "price": 1240,
+      "category": 0,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://kawaii-sushi.ru/images/%d1%81%d1%8b%d1%82%d1%8b%d0%b9-%d0%b2%d0%be%d0%b8%d0%bd530-%d1%80%d1%83%d0%b11350%d0%b3%d1%80.png?crc=398069320",
+      "name": "Сет Сытый воин",
+      "price": 570,
+      "category": 0,
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://kawaii-sushi.ru/images/%d1%82%d0%b5%d0%bc%d0%bf%d1%83%d1%80%d0%b0-%d1%81-%d1%83%d0%b3%d1%80%d0%b5%d0%bc.png?crc=488436727",
+      "name": "Темпура с угрем",
+      "price": 190,
+      "category": 1,
+      "rating": 8
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://kawaii-sushi.ru/images/%d0%ba%d0%b0%d0%bb%d0%b8%d1%84%d0%be%d1%80%d0%bd%d0%b8%d1%8f-%d1%81-%d0%ba%d1%80%d0%b5%d0%b2%d0%b5%d1%82%d0%ba%d0%be%d0%b9.png?crc=4045235756",
+      "name": "Калифорния с креветкой",
+      "price": 220,
+      "category": 1,
+      "rating": 2
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://kawaii-sushi.ru/images/%d0%ba%d0%bb%d0%b0%d1%81%d1%81%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d1%81-%d1%83%d0%b3%d1%80%d0%b5%d0%bc.png?crc=290577688",
+      "name": "Классический с угрем",
+      "price": 130,
+      "category": 1,
+      "rating": 9
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://kawaii-sushi.ru/images/%d0%b3%d1%83%d0%bd%d0%ba%d0%b0%d0%bd-%d1%81-%d0%bb%d0%be%d1%81%d0%be%d1%81%d0%b5%d0%bc-%d0%b8-%d1%81%d1%8b%d1%80%d0%be%d0%bc-%d0%b2%d0%b5%d1%81-60-%d0%b3%d1%80-%d1%80%d0%b8%d1%81%2c%d0%bb%d0%be%d1%81%d0%be%d1%81%d1%8c%2c%d1%81%d1%8b%d1%80%2c%d0%bd%d0%be%d1%80%d0%b8.png?crc=185997703",
+      "name": "Гункан с лососем и сыром",
+      "price": 70,
+      "category": 2,
+      "rating": 10
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://kawaii-sushi.ru/images/gunkan-ugor-e1471183919184.png?crc=4033573354",
+      "name": "Гункан с угрем",
+      "price": 90,
+      "category": 2,
+      "rating": 10
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://kawaii-sushi.ru/images/%d1%81%d1%83%d1%88%d0%b8-%d1%81-%d1%83%d0%b3%d1%80%d0%b5%d0%bc-%d0%b2%d0%b5%d1%81---50-%d0%b3%d1%80.png?crc=3768417030",
+      "name": "Суши с угрем",
+      "price": 90,
+      "category": 2,
+      "rating": 7
+    }
+  ]
+}
