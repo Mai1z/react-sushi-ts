@@ -8,9 +8,9 @@ const App:React.FC = () => {
     const [item, setItem] = useState([])
 
     useEffect(()=> {
-    fetch('http://localhost:3000/db.json').then((resp) => resp.json().then(json => {
-        setItem(json.sushi)
-    }))
+        fetch('http://localhost:3000/db.json').then((resp) => resp.json().then(json => {
+            setItem(json.sushi)
+        }))
     }, [])
 
     console.log(item)

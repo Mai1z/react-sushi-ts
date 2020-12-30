@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react'
 
-export const SortPopup:React.FC<{items:string[]}> = ({items}) => {
+export const SortPopup:React.FC<{items:Array<{ name: string, type: string}>}> = ({items}) => {
     const [visiblePopup, setVisiblePopup] = useState<boolean>(false)
     const [activeItem, setActiveItem] = useState<number>(0)
     const sortRef = useRef<HTMLDivElement | null>(null)
@@ -42,19 +42,19 @@ export const SortPopup:React.FC<{items:string[]}> = ({items}) => {
                     />
                 </svg>
                 <b>Сортировка по:</b>
-                <span onClick={toggleVisiblePopup}>{items[activeItem]}</span>
+                <span onClick={toggleVisiblePopup}>{items[activeItem].name}</span>
             </div>
             {
                 visiblePopup && <div className="sort__popup">
                     <ul>
                         {items &&
-                        items.map((name, index) => (
+                        items.map((obj, index) => (
                             <li
                                 onClick={() => onSelectItem(index)}
                                 className={activeItem === index ? 'active' : ''}
-                                key={`${name}_${index}`}
+                                key={`${obj.type}_${index}`}
                             >
-                                {name}
+                                {obj.name}
                             </li>
                         ))}
                     </ul>

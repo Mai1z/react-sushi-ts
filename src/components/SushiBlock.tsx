@@ -14,7 +14,7 @@ export const SushiBlock:React.FC<SushiBlock> = ({name, imageUrl, price}) => {
                     className="sushi-block__image"
                     src={imageUrl}
                     alt="Sushi"
-                />с т
+                />
             </div>
             <h4 className="sushi-block__title">{name}</h4>
             <div className="sushi-block__bottom">
