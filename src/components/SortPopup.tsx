@@ -15,7 +15,7 @@ export const SortPopup:React.FC<{items:Array<{ name: string, type: string}>}> = 
     }
 
     const handleOutsideClick = (e:any) => {
-        if (!e.path.includes(sortRef.current)) {
+        if (sortRef.current !== undefined && sortRef.current !== null && !sortRef.current.contains(e.target)) {
             setVisiblePopup(false)
             console.log('outside')
         }
