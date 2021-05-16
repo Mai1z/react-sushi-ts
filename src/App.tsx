@@ -13,7 +13,7 @@ const App:React.FC = () => {
         }))
     }, [])
 
-    console.log(item)
+    // console.log(item)
     return (
     <div>
         <div className="wrapper">
